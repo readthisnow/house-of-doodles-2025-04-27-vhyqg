@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="nl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Of Doodles - Creatieve Kortingen</title>
     <meta name="description" content="Ontdek House Of Doodles met exclusieve kortingen. Bestel nu en profiteer van speciale aanbiedingen!">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased bg-white text-gray-900">
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
-        <nav class="container mx-auto px-6 py-4" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold text-purple-600 hover:text-purple-700 transition-colors duration-300">
+                <a href="https://readthisnow.github.io/house-of-doodles-2025-04-27-vhyqg" class="text-2xl font-bold text-purple-600 hover:text-purple-700 transition-all duration-300 transform hover:scale-105">
                     House Of Doodles
                 </a>
-                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
+                <button class="mobile-menu-button md:hidden focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="hover:text-purple-600 transition-colors duration-300">Features</a>
-                    <a href="#benefits" class="hover:text-purple-600 transition-colors duration-300">Voordelen</a>
-                    <a href="#faq" class="hover:text-purple-600 transition-colors duration-300">FAQ</a>
-                    <a href="#contact" class="hover:text-purple-600 transition-colors duration-300">Contact</a>
+                    <a href="#features" class="hover:text-purple-600 transition-all duration-300 hover:scale-105">Features</a>
+                    <a href="#benefits" class="hover:text-purple-600 transition-all duration-300 hover:scale-105">Voordelen</a>
+                    <a href="#testimonials" class="hover:text-purple-600 transition-all duration-300 hover:scale-105">Testimonials</a>
+                    <a href="#about" class="hover:text-purple-600 transition-all duration-300 hover:scale-105">Over Ons</a>
+                    <a href="#faq" class="hover:text-purple-600 transition-all duration-300 hover:scale-105">FAQ</a>
+                    <a href="#contact" class="hover:text-purple-600 transition-all duration-300 hover:scale-105">Contact</a>
                 </div>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg">
+                <a href="#features" class="block px-4 py-2 hover:bg-purple-50 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block px-4 py-2 hover:bg-purple-50 transition-colors duration-300">Voordelen</a>
+                <a href="#testimonials" class="block px-4 py-2 hover:bg-purple-50 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block px-4 py-2 hover:bg-purple-50 transition-colors duration-300">Over Ons</a>
+                <a href="#faq" class="block px-4 py-2 hover:bg-purple-50 transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block px-4 py-2 hover:bg-purple-50 transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -36,13 +52,13 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 text-gray-900">
-                        Koop House Of Doodles Met Korting
+                        Transformeer Je Creativiteit Met House Of Doodles
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-600 mb-12">
-                        Nog maar enkele exemplaren beschikbaar! Profiteer nu van deze unieke aanbieding.
+                        Ontdek een wereld van oneindige mogelijkheden met onze unieke collectie. Profiteer nu van 25% korting op alle items - Gelimiteerde tijd!
                     </p>
                     <a href="https://amzn.to/4jPt4Xc" class="inline-block bg-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Bekijk Aanbieding
+                        Claim Je Korting Nu
                     </a>
                 </div>
             </div>
@@ -52,16 +68,33 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Ontdek de Mogelijkheden</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <div class="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="text-purple-600 mb-4">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Laatste Kans!</h3>
-                        <p class="text-gray-600">Nog maar enkele exemplaren beschikbaar. Wees er snel bij!</p>
+                        <h3 class="text-xl font-semibold mb-4">Premium Kwaliteit</h3>
+                        <p class="text-gray-600">Hoogwaardige materialen en vakmanschap voor een ongeëvenaarde creatieve ervaring.</p>
                     </div>
-                    <!-- Additional feature cards with similar structure -->
+                    <div class="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="text-purple-600 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Snelle Levering</h3>
+                        <p class="text-gray-600">Binnen 24 uur verzonden, meestal binnen 1-2 werkdagen bij je thuis.</p>
+                    </div>
+                    <div class="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="text-purple-600 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Geld-Terug Garantie</h3>
+                        <p class="text-gray-600">100% tevredenheidsgarantie met 30 dagen retourrecht.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,7 +103,84 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Waarom House Of Doodles?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <!-- Benefit items -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-xl font-semibold mb-4">Exclusieve Designs</h3>
+                        <p class="text-gray-600">Unieke patronen en ontwerpen die je nergens anders vindt. Perfect voor het stimuleren van creativiteit.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-xl font-semibold mb-4">Duurzame Kwaliteit</h3>
+                        <p class="text-gray-600">Gemaakt van premium materialen die lang meegaan en hun kwaliteit behouden.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Wat Onze Klanten Zeggen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Fantastische kwaliteit en super snelle levering. Precies wat ik zocht voor mijn creatieve projecten!"</p>
+                        <p class="font-semibold">Lisa van den Berg</p>
+                        <p class="text-sm text-gray-500">Kunstenaar</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"De designs zijn uniek en inspirerend. Mijn studenten zijn er dol op!"</p>
+                        <p class="font-semibold">Mark Jansen</p>
+                        <p class="text-sm text-gray-500">Docent Beeldende Kunst</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Beste aankoop die ik dit jaar heb gedaan. De kwaliteit overtreft alle verwachtingen."</p>
+                        <p class="font-semibold">Emma de Vries</p>
+                        <p class="text-sm text-gray-500">Hobbyist</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Uitstekende klantenservice en een product dat aan alle verwachtingen voldoet."</p>
+                        <p class="font-semibold">Thomas Bakker</p>
+                        <p class="text-sm text-gray-500">Grafisch Ontwerper</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-purple-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Over Ons</h2>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-gray-600 mb-8">
+                        House of Doodles begon in 2020 als een klein familiebedrijf met een grote droom: het maken van de meest inspirerende en kwalitatieve creatieve producten. Wat begon in een kleine werkplaats is uitgegroeid tot een toonaangevend merk in de creatieve industrie.
+                    </p>
+                    <p class="text-gray-600">
+                        Onze missie is om creativiteit toegankelijk te maken voor iedereen. We geloven dat elk persoon een kunstenaar is en we streven ernaar om producten te maken die inspireren, motiveren en vreugde brengen in het creatieve proces. Onze kernwaarden zijn kwaliteit, innovatie en klanttevredenheid.
+                    </p>
                 </div>
             </div>
         </section>
@@ -81,19 +191,34 @@
                 <div class="max-w-3xl mx-auto space-y-6">
                     <div class="border-b border-gray-200 pb-6">
                         <h3 class="text-xl font-semibold mb-4">Hoe lang duurt de levering?</h3>
-                        <p class="text-gray-600">Meestal binnen 1-2 werkdagen geleverd.</p>
+                        <p class="text-gray-600">We verzenden binnen 24 uur en leveren meestal binnen 1-2 werkdagen in Nederland.</p>
                     </div>
-                    <!-- Additional FAQ items -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-xl font-semibold mb-4">Wat is jullie retourbeleid?</h3>
+                        <p class="text-gray-600">We bieden een 30-dagen-niet-goed-geld-terug garantie op al onze producten.</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-xl font-semibold mb-4">Zijn de producten geschikt voor beginners?</h3>
+                        <p class="text-gray-600">Ja, onze producten zijn ontworpen voor alle vaardigheidsniveaus, van beginner tot expert.</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-xl font-semibold mb-4">Kan ik meerdere kortingen combineren?</h3>
+                        <p class="text-gray-600">Kortingen kunnen niet worden gecombineerd met andere aanbiedingen of promoties.</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-xl font-semibold mb-4">Bieden jullie bulk-kortingen aan?</h3>
+                        <p class="text-gray-600">Ja, voor bestellingen boven de 10 stuks bieden we speciale bulk-kortingen. Neem contact op voor details.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-purple-600 text-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Mis Deze Kans Niet!</h2>
-                <p class="text-xl mb-12">Bestel nu en profiteer van deze speciale aanbieding</p>
+        <section class="py-24 bg-purple-600 text-white" style="background-image: url('https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); background-size: cover; background-position: center;">
+            <div class="container mx-auto px-6 text-center bg-purple-600/90 py-16 rounded-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Mis Deze Unieke Kans Niet!</h2>
+                <p class="text-xl mb-12">Bestel nu en ontvang 25% korting op je eerste bestelling</p>
                 <a href="https://amzn.to/4jPt4Xc" class="inline-block bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Direct Bestellen
+                    Profiteer Nu van de Aanbieding
                 </a>
             </div>
         </section>
@@ -104,23 +229,30 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Contact</h3>
-                    <p class="mb-2">Email: contact@example.com</p>
+                    <p class="mb-2">Email: contact@houseofdoodles.com</p>
+                    <p class="mb-2">Tel: +31 (0)20 123 4567</p>
+                    <p>Adres: Creativiteitslaan 123, Amsterdam</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://readthisnow.github.io/house-of-doodles-2025-04-27-vhyqg/privacy.html" class="hover:text-purple-400 transition-all duration-300">Privacy Policy</a></li>
+                        <li><a href="https://readthisnow.github.io/house-of-doodles-2025-04-27-vhyqg/terms.html" class="hover:text-purple-400 transition-all duration-300">Terms of Service</a></li>
+                        <li><a href="https://readthisnow.github.io/house-of-doodles-2025-04-27-vhyqg/blog.html" class="hover:text-purple-400 transition-all duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Volg Ons</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="hover:text-purple-400 transition-colors duration-300">
-                            <span class="sr-only">Facebook</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        <a href="#" class="hover:text-purple-400 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-facebook fa-2x"></i>
                         </a>
-                        <!-- Additional social media icons -->
+                        <a href="#" class="hover:text-purple-400 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="#" class="hover:text-purple-400 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -129,5 +261,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
